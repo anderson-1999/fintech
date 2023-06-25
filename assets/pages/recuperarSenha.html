@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha Fintech</title>
+    <link rel="stylesheet" href="../css/styleRecuperarSenha.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="body">
+    <header class="p-3">
+                <h1 class="text-center">Recuperar Senha</h1>
+    </header>
+    <main class="align-items-center">
+            <form action="" id="entrar" class="pt-5 m-4" name="entrar" method="get">
+                <div class="col-12">
+                    <div class="m-2">
+                        <label for="usuario" class="form-label">CPF ou CNPJ: </label>
+                        <input type="text" class="form-control" id="usuario" placeholder="cpf ou cnpj">
+                    </div>
+                    <div class="d-flex justify-content-end m-2">
+                        <button type="button" class="btn btn-danger d-flex justify-content-end" data-bs-toggle="modal" data-bs-target="#recuperarSenha">
+                            <span class="">Recuperar</span>
+                        </button>
+                        <div class="modal fade" id="recuperarSenha" tabindex="-1" aria-labelledby="recuperarSenha" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="recuperarSenha">Recuperar Senha</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="">
+                                                <p>Pedir código</p>
+                                                <input class="ms-0 ps-0" type="radio" id="email" name="area" value="1">
+                                                <label class="col-11 col-md-5" for="recuperar">xxxx@xxxxx.com</label>
+        
+                                                <input class="ms-0 ps-0" type="radio" id="telefone" name="area" value="2">
+                                                <label class="col-11 col-md-5" for="recuperar">(xx) xxxxx-xxxx</label>
+
+                                                <button class="my-2 btn btn-danger d-flex justify-content-end">Pedir</button>
+                                                <div class="">
+                                                    <label for="codigo" class="form-label">Insira Código: </label>
+                                                    <input type="text" class="form-control" id="codigo" placeholder="xxxx">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Recuperar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
