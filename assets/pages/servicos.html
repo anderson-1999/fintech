@@ -48,24 +48,25 @@
         <table class="">
             <thead class="text-center">
                 <tr>
-                    <th >Item</th>
+                    <th>Item</th>
                     <th>Valores Mensais</th>
                     <th>Info</th>
                 </tr>
             </thead>
             <tbody class="text-center">
                 <tr>
-                    <td>Nada consta</td>
+                    <td>Nenhum Serviço adicionado</td>
                     <td>0,00</td>
                     <td></td>
                 </tr>
             </tbody>
         </table>
-        <div class="d-flex justify-content-center mt-1">
+        <div id="addServicos" class="d-flex justify-content-center mt-1">
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#adicionarServico">
                 <span class="bi bi-plus-circle-fill"></span>
             </button>
-            <div class="modal fade" id="adicionarServico" tabindex="-1" aria-labelledby="adicionarServico" aria-hidden="true">
+            <div class="modal fade" id="adicionarServico" tabindex="-1" aria-labelledby="adicionarServico" aria-hidden="false">
+                <form action="">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -73,25 +74,25 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form action="">
+                            
                                 <div class="">
                                     <input type="checkbox" id="product1" name="product1" value="Seguro do cartão">
                                     <label for="product1">Seguro do cartão valor 10,00</label><br>
 
-                                    <input type="checkbox" id="product2" name="product2" value="Lis conta">
+                                    <input type="checkbox" id="product2" name="product2" value="Lis Conta">
                                     <label for="product2">Lis conta valor 3,00</label><br>
 
-                                    <input type="checkbox" id="product3" name="product3" value="Cesta de produtos">
+                                    <input type="checkbox" id="product3" name="product3" value="Cesta de Produtos">
                                     <label for="product3">Cesta de produtos valor 5,00</label>
                                 </div>
+                            
                         </div>
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Adicionar Serviço</button>
                         </div>
-                        </form>
-                            </div>
-                        </div>
+                    </div>
                 </div>
+            </form>
             </div>
         </div>
     </main>
