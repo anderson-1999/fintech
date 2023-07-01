@@ -38,47 +38,43 @@ document.querySelector('form').addEventListener('submit', function(e) {
     //utilizar primeiro index do array para subistir a resposta padrão
     const textInicial = tdInicial[0].textContent;
     //checado se a tabela ainda não foi modificada
-    if(i == 0 && textInicial == 'Nenhum Serviço adicionado') {
+    if(textInicial == 'Nenhum Serviço adicionado') {
       //trocando o valor da primeira tr da tbody
       tdInicial[0].textContent = novoServico[i];
       tdInicial[1].textContent = novoValor[i];
       tdInicial[2].textContent = null;
     }
-    else {
-      // criando a tr 
-      const tr = document.createElement('tr');
-      // criando as td
-      const td1 = document.createElement('td');
-      const td2 = document.createElement('td');
-      const td3 = document.createElement('td');
+    // criando a tr 
+    const tr = document.createElement('tr');
+    // criando as td
+    const td1 = document.createElement('td');
+    const td2 = document.createElement('td');
+    const td3 = document.createElement('td');
 
-      //boolean adiciona para impedir que um elemento repitido seja inserido na tabela
-      let isValorUnico = true;
+    //boolean adiciona para impedir que um elemento repitido seja inserido na tabela
+    let isValorUnico = true;
 
-      //colondo os serviços na td
-      td1.textContent = novoServico[i];
-      td2.textContent = novoValor[i];
-      td3.textContent = null;
+    //colondo os serviços na td
+    td1.textContent = novoServico[i];
+    td2.textContent = novoValor[i];
+    td3.className = 'bi bi-info-circle-fill';
 
-      //checando se o serviço já está na tabela
-      tdInicial.forEach(campo => {
-        if(campo.textContent == td1.textContent) {
-          isValorUnico = false;
-        }
-      })
-
-      if(isValorUnico) {
-        
-          //colocando a td na tr
-        tr.appendChild(td1);
-        tr.appendChild(td2);
-        tr.appendChild(td3);
-        //colocando a tr no tbody
-        tbody.appendChild(tr);
+    //checando se o serviço já está na tabela
+    tdInicial.forEach(campo => {
+      if(campo.textContent == td1.textContent) {
+        isValorUnico = false;
       }
+    })
+  
+    if(isValorUnico) {
       
+        //colocando a td na tr
+      tr.appendChild(td1);
+      tr.appendChild(td2);
+      tr.appendChild(td3);
+      //colocando a tr no tbody
+      tbody.appendChild(tr);
     }
-    
   }
   
   //limpando o form
