@@ -10,12 +10,6 @@ li:hover{
     background-color: #fff;
 }
 
-footer {
-    display: block;
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    z-index: 49 !important;
-    cursor: pointer;
-    
+.pix {
+    size: 25%;
 }

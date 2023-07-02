@@ -1,5 +1,6 @@
 .body {
     background-color: #d7cbcb;
+    height: 100%;
 }
 
 header {
@@ -12,4 +13,5 @@ li:hover{
 
 .saldo {
     background-color: #d9d9d9;
+    
 }
