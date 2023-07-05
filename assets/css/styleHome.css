@@ -1,17 +1,3 @@
-.body {
-    background-color: #d7cbcb;
-    height: 100%;
-}
-
-header {
-    background-color: #d9d9d9;
-}
-
 li:hover{
     background-color: #fff;
-}
-
-.saldo {
-    background-color: #d9d9d9;
-    
 }

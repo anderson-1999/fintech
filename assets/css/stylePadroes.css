@@ -1,0 +1,19 @@
+:root {
+    --custom1: #d7cbcb;
+    --custom2: #d9d9d9;
+    --custom3: #aea2a2;
+    --opcional1: #fff;
+    --opcional2: #000;
+}
+
+.bg-custom1 {
+    background-color: var(--custom1) !important;
+}
+
+.bg-custom2 {
+    background-color: var(--custom2) !important;
+}
+
+.bg-custom3 {
+    background-color: var(--custom3) !important;
+}
