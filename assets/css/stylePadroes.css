@@ -17,3 +17,7 @@
 .bg-custom3 {
     background-color: var(--custom3) !important;
 }
+
+li:hover{
+    background-color: var(--opcional1);
+}

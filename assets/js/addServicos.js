@@ -79,4 +79,6 @@ document.querySelector('form').addEventListener('submit', function(e) {
   
   //limpando o form
   this.reset();
+  somarValores();
 })
+

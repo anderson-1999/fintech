@@ -1,13 +1,4 @@
-:root {
-    --opcional1: #fff;
-    --opcional2: #000;
-}
-
-li:hover{
-    background-color: var(--opcional1);
-}
-
-table{
+    table{
     width: 100vw;
 }
 
@@ -16,6 +7,10 @@ thead tr {
 }
 
 tbody tr {
+    border-bottom: 1px solid var(--opcional2);
+}
+
+tfoot tr {
     border-bottom: 1px solid var(--opcional2);
 }
 
