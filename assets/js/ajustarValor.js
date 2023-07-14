@@ -5,7 +5,11 @@ const saldo = document.querySelector('[saldo]');
 console.log(saldo.textContent);
 
 //alterando valor do atributo
-setTimeout(function() { 
+let recebeValor = Number.parseFloat(saldo.textContent);
+
+
+function atrasarSaldo() {
     saldo.textContent = '3,00';
-    console.log(saldo.textContent);
-}, 5000);
+    newPopup();
+}
+setTimeout(atrasarSaldo, 1000);
