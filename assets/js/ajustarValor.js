@@ -12,4 +12,4 @@ function atrasarSaldo() {
     saldo.textContent = '3,00';
     newPopup();
 }
-setTimeout(atrasarSaldo, 1000);
+setTimeout(atrasarSaldo, 1000*5);
